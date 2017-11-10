@@ -34,23 +34,23 @@ def start(bot, update):
                            action=ChatAction.TYPING)
         time.sleep(1)
         bot.sendMessage(chat_id=update.message.chat_id,
-                        text="It seems like you aren't allowed to use me. :(")
+                        text="متاسفانه شما اجازه دسترسی به سرور را ندارید :(")
         bot.sendChatAction(chat_id=update.message.chat_id,
                            action=ChatAction.TYPING)
         time.sleep(1.5)
         bot.sendMessage(chat_id=update.message.chat_id,
-                        text="But sudobot is open source software, which means you can have your own! See my [GitHub repo](https://github.com/bvanrijn/sudobot) for details.", parse_mode="Markdown")
+                        text="برای اطلاعات بیشتر به ادمین من پیام بدید  [SaYed](https://t.me/afprogrammer).", parse_mode="Markdown")
     else:
         bot.sendChatAction(chat_id=update.message.chat_id,
                            action=ChatAction.TYPING)
         time.sleep(1)
         bot.sendMessage(chat_id=update.message.chat_id,
-                        text="You can use me to run commands on your computer or server.")
+                        text="ادمین عزیز خوش آمدید.")
         bot.sendChatAction(chat_id=update.message.chat_id,
                            action=ChatAction.TYPING)
         time.sleep(1.5)
         bot.sendMessage(chat_id=update.message.chat_id,
-                        text="Note that interactive commands or commands that generate a lot of output won't work.")
+                        text="برای استفاده از من فقط کافیه دستور خودتون رو بفرستید.")
         bot.sendChatAction(chat_id=update.message.chat_id,
                            action=ChatAction.TYPING)
         time.sleep(1)
@@ -59,7 +59,7 @@ def start(bot, update):
                            action=ChatAction.TYPING)
         time.sleep(1.5)
         bot.sendMessage(chat_id=update.message.chat_id,
-                        text="Oh, before I forget: sudobot is open source software. See my [GitHub repo](https://github.com/bvanrijn/sudobot).", parse_mode="Markdown")
+                        text=" [AFBoTS](https://t.me/afbots).", parse_mode="Markdown")
 
 
 def execute(bot, update, direct=True):
